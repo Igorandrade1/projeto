@@ -118,7 +118,7 @@ class RecipeViewsTest(RecipeTestBase):
         recipe = self.make_recipe(is_published=False)
 
         response = self.client.get(
-            reverse('recipes:recipe',  kwargs={'id': recipe.Category.id})
+            reverse('recipes:recipe',  kwargs={'id': recipe.id})
         )
 
         # Check if one recipe exists
