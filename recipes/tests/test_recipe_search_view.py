@@ -7,7 +7,7 @@ from recipes import views
 from .test_recipe_base import RecipeTestBase
 
 
-class RecipeViewsTest(RecipeTestBase):
+class RecipeSearchViewsTest(RecipeTestBase):
 
     def test_recipe_search_uses_correct_view_function(self):
         resolved = resolve(reverse('recipes:search'))
